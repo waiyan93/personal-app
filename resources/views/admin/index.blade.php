@@ -19,9 +19,6 @@
     <!-- Main content -->
     <section class="content container-fluid">
 
-    @component('components.who')
-    @endcomponent
-
     </section>
     <!-- /.content -->
 </div>
