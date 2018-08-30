@@ -19,7 +19,9 @@ Route::prefix('admin')->group(function() {
     Route::get('/login', 'Admin\Auth\AdminLoginController@showLoginForm')->name('admin.login.show');
     Route::post('/login', 'Admin\Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::post('/logout', 'Admin\Auth\AdminLoginController@logout')->name('admin.logout');
+    Route::resource('todos', 'Admin\TodosController');
     Route::get('/', 'Admin\AdminController@index')->name('admin.dashboard');
+    
 
     // Password reset routes
     Route::post('/password/email', 'Admin\Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');

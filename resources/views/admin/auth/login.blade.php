@@ -27,11 +27,11 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#">Laraval Template</a>
+    <a href="#">Admin Login</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-        <p class="login-box-msg">Admin Login</p>
+        <p class="login-box-msg">Login with email and password.</p>
         {!! Form::open([
             'route' => 'admin.login.submit', 
             'method' => 'POST'

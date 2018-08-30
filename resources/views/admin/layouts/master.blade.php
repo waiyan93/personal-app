@@ -52,9 +52,12 @@ desired effect
 -->
 @yield('css')
 <body class="hold-transition skin-blue sidebar-mini">
-  <div class="wrapper">
-      @yield('content')
-  </div>
+    <div class="wrapper">
+        @include('admin.partials.nav-bar')
+        @include('admin.partials.side-bar')
+        @yield('content')
+        @include('admin.partials.footer')
+    </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
@@ -75,6 +78,7 @@ desired effect
 <script src="{{ asset('admin-lte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <!-- ChartJS -->
 <script src="{{ asset('admin-lte/bower_components/chart.js/Chart.js') }}"></script>
+
 @yield('js')
 </body>
 </html>
